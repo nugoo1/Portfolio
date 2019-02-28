@@ -1,0 +1,29 @@
+@import "../styles/settings.scss";
+
+.logo__svg {
+  height: 32px;
+  rect {
+    stroke: white;
+    transition: stroke 0.35s ease-in-out;
+  }
+  path {
+    fill: white;
+  }
+  &:hover {
+    rect {
+      stroke: red;
+    }
+  }
+  
+}
+
+.social__svg {
+  path {
+    transition: fill 0.35s ease-in-out;
+  }
+  &:hover {
+    path {
+      fill: red;
+    }
+  }
+}

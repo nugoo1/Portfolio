@@ -1,0 +1,230 @@
+@import "../styles/settings";
+
+// #root {
+//   overflow: hidden;
+//   margin: 0;
+//   padding: 0;
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// #root > div {
+//   width: 400px;
+// }
+
+// .transitions-item {
+//   overflow: hidden;
+//   width: 100%;
+//   color: white;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 6em;
+//   font-weight: 800;
+//   text-transform: uppercase;
+//   will-change: transform, opacity, height;
+//   white-space: nowrap;
+//   cursor: pointer;
+//   line-height: 80px;
+// }
+
+// // Animated Card
+
+// #root {
+//   margin: 0;
+//   padding: 0;
+//   height: 100%;
+//   width: 100%;
+//   overflow: hidden;
+//   user-select: none;
+//   background: #f0f0f0;
+// }
+
+// #root > div {
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .c {
+//   position: absolute;
+//   max-width: 500px;
+//   max-height: 500px;
+//   width: 50ch;
+//   height: 50ch;
+//   cursor: pointer;
+//   will-change: transform, opacity;
+// }
+
+// .front,
+// .back {
+//   background-size: cover;
+// }
+
+// .back {
+//   background-image: url(https://images.unsplash.com/photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80i&auto=format&fit=crop);
+// }
+
+// .front {
+//   background-image: url(https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&w=1181&q=80&auto=format&fit=crop);
+// }
+
+
+// // Monster 
+
+// * {
+//   box-sizing: border-box;
+// }
+
+
+// body {
+//   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial,
+//     sans-serif;
+//   background: transparent;
+//   -webkit-touch-callout: none;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   cursor: default;
+// }
+
+// #root {
+//   overflow: hidden;
+// }
+
+// .container {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   text-align: justify;
+//   background: white;
+//   color: lightpink;
+//   font-size: 20em;
+//   line-height: 0.9em;
+//   font-weight: 800;
+//   svg {
+//     pointer-events: none;
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     width: 100vw;
+//     max-width: 600px;
+//     transform-origin: 0% 0%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     font-weight: 800;
+//     font-size: 10em;
+//   }
+// }
+
+
+
+// #bg {
+//   fill: $yellow;
+// }
+// #sweater > path:nth-child(1) {
+//   fill: #60d882;
+// }
+// #sweater > path:nth-child(2) {
+//   fill: #37c47a;
+// }
+// #sweater > path:nth-child(3) {
+//   fill: #37c47a;
+// }
+
+// #face > path:nth-child(1) {
+//   fill: #ffe2b8;
+// }
+// #face > path:nth-child(2) {
+//   fill: #ffc987;
+// }
+// #eye > path:nth-child(2) {
+//   fill: #f0f0f0;
+// }
+// #eye > g:first-of-type > path:nth-child(1) {
+//   fill: #159e97;
+// }
+// #eye > g:first-of-type > path:nth-child(2) {
+//   fill: #0f9390;
+// }
+// #eye > g:last-of-type > path:nth-child(2) {
+//   fill: #231f20;
+// }
+// #mouth > path:nth-child(1) {
+//   fill: #f24976;
+// }
+// #mouth > path:nth-child(2) {
+//   fill: #b7092b;
+// }
+// #mouth > path:nth-child(3) {
+//   fill: #a00026;
+// }
+// #mouth > path:nth-child(4) {
+//   fill: #ffffff;
+// }
+// #hair > path:nth-of-type(1) {
+//   fill: #62317c;
+// }
+// #hair > path:nth-of-type(2) {
+//   fill: #62317c;
+// }
+// #hair > path:nth-of-type(3) {
+//   fill: #62317c;
+// }
+
+
+// Carousel 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overscroll-behavior-y: contain;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
+    segoe ui, arial, sans-serif;
+  position: fixed;
+  overflow-x: hidden;
+}
+
+#root {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#root > div {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  will-change: transform;
+}
+
+#root > div > div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  box-shadow: 0 62.5px 125px -25px rgba(50, 50, 73, 0.5), 0 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
+}
+
+.image {
+  cursor: pointer;
+}
