@@ -1,11 +1,15 @@
 .container {
     height: 80vh;
     width: 100vw;
-    background-color: black;
     position: relative;
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    
+    opacity: 0.9;
+    background-color: black;
 }
-
-
 
 .particles {
     canvas {

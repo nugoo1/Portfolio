@@ -5,8 +5,43 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  .title,
+  .subtitle,
+  .text {
+    color: $white;
+  }
+  .button {
+    background-color: $primary;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    margin-top: 2em;
+  }
 }
 
-.title {
-    color: $white;
+.image {
+  animation: rotate 10s infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.containerLeft {
+  display: none;
+}
+
+@media only screen and (min-width: 920px) {
+  .containerLeft {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+  }
 }

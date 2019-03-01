@@ -8,8 +8,34 @@
   grid-gap: 20px;
 }
 
+.title {
+  text-align: center;
+  margin: 6rem 0 6rem 0;
+}
+
+.title::before {
+  content: '';
+  background-image: url("/images/gears.png");
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  margin-left: -50px;
+  animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
 .portfolio-item {
-  background: $yellow;
+  background: $primary;
   color: $black;
   font-weight: bold;
   display: flex;

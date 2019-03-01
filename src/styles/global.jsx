@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: "white";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
   a {
     text-decoration: none;

@@ -7,6 +7,7 @@ export default function Portfolio() {
   return (
     <>
       <div className={pageStyles.mainContent}>
+      <h1 className="title">My Work</h1>
         <div className="portfolio">
           <div className="portfolio-item medium one"><a href="/">Budget App</a></div>
           <div className="portfolio-item large two"><a href="/">Casino Website</a></div>
