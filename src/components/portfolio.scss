@@ -5,19 +5,41 @@
   height: 100vh;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
+  position: relative;
+  grid-gap: 1px;
+}
+
+.titleContainer {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  left: 50%;
+  top:50%;
+  transform: translate(-60%);
 }
 
 .title {
   text-align: center;
   margin: 6rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.title::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  background: $primary;
+  top: 70%;
+  transform: translateX(50%);
 }
 
 .title::before {
-  content: '';
+  content: "";
   background-image: url("/images/gears.png");
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -27,10 +49,10 @@
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 
@@ -39,10 +61,13 @@
   color: $black;
   font-weight: bold;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
   text-align: center;
   font-size: 2em;
+  padding: 20px 0 20px 40px;
+  position: relative;
 
   &.small {
     grid-row: span 1;
@@ -78,14 +103,41 @@
   text-transform: capitalize;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   transition: all ease-in-out 300ms;
   position: relative;
-  cursor: pointer;
   z-index: 10;
 
   & a {
-    color: $grey;
+    color: $white;
+  }
+
+  .linkOne {
+    font-family: p-thin;
+    margin-bottom: 4px;
+  }
+
+  .linkOne::before {
+      content: '';
+      background-image: url("/images/github.png");
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      background-size: cover;
+      background-position: center;
+      margin-left: -25px;
+  }
+
+
+  .linkTwo::before {
+      content: '';
+      background-image: url("/images/link.png");
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      background-size: cover;
+      background-position: center;
+      margin-left: -25px;
   }
 
   &::before {
@@ -107,10 +159,7 @@
   }
 
   &:hover {
-    background-position: top;
-    & a {
-      color: white;
-    }
+    background-position: center;
   }
 }
 
@@ -120,10 +169,16 @@
 //   background-image: url("/images/expensify.jpg");
 // }
 
-// .two {
-//   background-image: url("/images/newmacau.jpg");
-// }
+.two {
+  background-image: url("/images/newmacau.jpg");
+}
 
-// .three {
-//   background-image: url("/images/sarradem.jpg");
-// }
+.three {
+  background-image: url("/images/sarradem.jpg");
+}
+
+@media only screen and (max-width: 768px) {
+  .linkOne, .linkTwo {
+    display: none;
+  }
+}

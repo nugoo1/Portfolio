@@ -14,8 +14,8 @@ $dark-purple: #663366;
 $light-blue: #330033;
 $dark-blue: #000033;
 
-$primary: $light-purple;
-$secondary: $light-blue;
+$secondary: $light-purple;
+$primary: $light-blue;
 
 // Font Size
 $font-size-large: 1.8rem;
@@ -68,7 +68,7 @@ $container-width: 60%;
 
 
 h1 {
-  color: $grey;
+  color: $primary;
   font-family: p-regular;
   font-size: 2.625rem;
   font-weight: 600;

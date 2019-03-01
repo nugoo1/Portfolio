@@ -5,20 +5,17 @@
   padding: 0;
   rect {
     stroke: white;
-    transition: stroke 0.35s ease-in-out;
+    fill: transparent;
+    transition: fill 0.35s ease-in-out;
   }
   path {
     fill: white;
-    transition: fill 0.35s ease-in-out;
   }
-  // &:hover {
-  //   rect {
-  //     stroke: $secondary;
-  //   }
-  //   path {
-  //     fill: $secondary;
-  //   }
-  // }
+  &:hover {
+    rect {
+      fill: $secondary;
+    }
+  }
 }
 
 .social__svg {
@@ -27,7 +24,7 @@
   }
   &:hover {
     path {
-      fill: $primary;
+      fill: $secondary;
     }
   }
 }
