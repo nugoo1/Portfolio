@@ -8,7 +8,7 @@ export default function Portfolio() {
     <>
       <div className={pageStyles.mainContent}>
         <div className="titleContainer">
-          <h1 className="title">My Work</h1>
+          <h1 className="title">Past Work</h1>
         </div>
         <div className="portfolio">
           <div className="portfolio-item medium one">

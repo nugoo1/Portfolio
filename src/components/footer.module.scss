@@ -1,0 +1,54 @@
+@import "../styles/settings.scss";
+
+.contactContainer {
+  background-color: $darker-blue;
+  padding: 5em;
+  background-image: linear-gradient(
+    to right,
+    white 10%,
+    $off-white 80%
+  );
+  background-position: bottom;
+  background-size: 12px 6px;
+  background-repeat: repeat-x;
+}
+
+.contactTitle {
+  text-align: center;
+  color: $white;
+}
+
+.footerContainer {
+  background-color: $darker-blue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: $white;
+    margin-top: 4em;
+    margin-bottom: 1em;
+  }
+}
+
+.socialIcons {
+  display: flex;
+  a {
+    font-size: 2rem;
+    margin: 0 8px;
+    border-radius: 3px;
+    padding: 10px 16px;
+    background-color: $off-white;
+    color: $white;
+  }
+}
+
+.copyrightContainer {
+  margin-top: 6em;
+  p {
+    color: darken(white, 40%);
+    font-size: 0.8rem;
+    margin: 10px;
+  }
+}

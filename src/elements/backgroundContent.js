@@ -1,13 +1,9 @@
 import React from "react"
 import backgroundContentStyles from "./backgroundContent.module.scss"
-import bigBall from "../images/big-ball.png";
 
 export default function backgroundContent() {
   return (
     <>
-      {/* <div className={backgroundContentStyles.containerLeft}>
-        <img className={backgroundContentStyles.image} src={bigBall}/>
-      </div> */}
       <div className={backgroundContentStyles.container}>
         <h2 className={backgroundContentStyles.subtitle}>Welcome to</h2>
         <h1 className={backgroundContentStyles.title}>My Portfolio</h1>
