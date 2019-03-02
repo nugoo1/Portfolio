@@ -104,7 +104,6 @@
   text-transform: capitalize;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   background-size: cover;
-  background-position: top;
   transition: all ease-in-out 300ms;
   position: relative;
 
@@ -170,7 +169,33 @@
   background-image: url("/images/sarradem.jpg");
 }
 
+.four {
+  background-image: url("/images/betsure.jpg");
+}
+
+.five {
+  background-image: url("/images/gundapower.jpg");
+}
+
+.six {
+  background-image: url("/images/sarradem.jpg");
+}
+
 @media only screen and (max-width: 768px) {
+
+  .portfolio {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+  }
+
+  .portfolio-item { 
+      &.small, &.medium, &.large, &.tall, &.wide  {
+      grid-row: span 1;
+      grid-column: span 1;
+    }
+  }
+
   .linkOne {
     display: none;
   }
@@ -178,22 +203,4 @@
     font-size: 0.5rem;
   }
 
-  .small {
-    padding: 8px;
-    .linkTwo::before {
-      display: none;
-    }
-  }
-
-  .one,
-  .two,
-  .three,
-  .four,
-  .five,
-  .six {
-    background-position: right;
-    &:hover {
-      background-position: center;
-    }
-  }
 }

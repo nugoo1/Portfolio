@@ -1,5 +1,44 @@
 @import "../styles/settings.scss";
 
+
+.titleContainer {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%);
+  }
+  
+  .title {
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+  }
+  
+  .title::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    background: $white;
+    top: 90%;
+    transform: translateX(50%);
+  }
+  
+  .title::before {
+    content: "";
+    background-image: url("/images/feather.png");
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    margin-left: -50px;
+  }
+
 .contactContainer {
   background-color: $darker-blue;
   padding: 5em;

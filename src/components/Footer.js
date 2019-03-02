@@ -13,10 +13,9 @@ export default function Footer() {
   return (
     <>
       <div className={footerStyles.contactContainer}>
-        <h1 className={footerStyles.contactTitle}>
-          <FaFeatherAlt style={{marginRight: "20px"}}/>
-          Reach Out
-        </h1>
+        <div className={footerStyles.titleContainer}>
+          <h1 className={footerStyles.title}>Reach Out</h1>
+        </div>
       </div>
       <div className={footerStyles.footerContainer}>
         <h2>Connect Directly</h2>
