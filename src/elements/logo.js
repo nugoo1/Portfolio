@@ -402,7 +402,7 @@ export const BehanceLogo = () => (
   </svg>
 )
 
-export const InstagramLogo = () => (
+export const LinkeinLogo = () => (
   <svg
     version="1.1"
     id="Layer_1"

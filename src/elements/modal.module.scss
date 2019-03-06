@@ -1,0 +1,75 @@
+@import "../styles/settings";
+
+.button {
+  margin-top: 8px;
+  color: $white;
+  font-family: p-bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  background-image: url("/images/info.png");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  margin-left: -25px;
+}
+
+.button::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: $white;
+
+  position: absolute;
+  bottom: -10px;
+  width: 0%;
+
+  transition: all ease-in-out 0.25s;
+}
+.button:hover::after {
+  width: 100%;
+}
+
+.gridContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  max-height: 80%;
+  width: 80%;
+}
+
+.textContainer {
+  h1, p, a {
+    margin: 20px;
+  }
+  h1 {
+    color: darken($blue, 15%)
+  }
+  a {
+    color: $blue;
+    transition: color 0.35s ease-in-out;
+  }
+  a:hover {
+    color: darken($blue, 10%)
+  }
+}

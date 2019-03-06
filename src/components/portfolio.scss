@@ -69,7 +69,6 @@
   padding: 20px 0 20px 40px;
   position: relative;
 
-
   &.small {
     grid-row: span 1;
     grid-column: span 1;
@@ -106,6 +105,7 @@
   background-size: cover;
   transition: all ease-in-out 300ms;
   position: relative;
+  opacity: 0.3;
 
   & a {
     color: $white;
@@ -152,6 +152,7 @@
 
   &:hover {
     background-position: center;
+    opacity: 1;
   }
 }
 
@@ -182,15 +183,18 @@
 }
 
 @media only screen and (max-width: 768px) {
-
   .portfolio {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2px;
   }
 
-  .portfolio-item { 
-      &.small, &.medium, &.large, &.tall, &.wide  {
+  .portfolio-item {
+    &.small,
+    &.medium,
+    &.large,
+    &.tall,
+    &.wide {
       grid-row: span 1;
       grid-column: span 1;
     }
@@ -202,5 +206,4 @@
   .linkTwo {
     font-size: 0.5rem;
   }
-
 }

@@ -3,11 +3,10 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import React from "react";
 import LogoSVG, {
-  InstagramLogo,
+  LinkeinLogo,
   BehanceLogo,
   GithubLogo,
 } from "../elements/logo";
-import NavDrawer from "./NavDrawer";
 
 import headerStyles from "./header.module.scss";
 
@@ -46,19 +45,19 @@ class Header extends React.Component {
           <nav className={headerStyles.nav}>
             <ul>
               <li>
-                <Link to="/portfolio">
-                  <InstagramLogo />
-                </Link>
+                <a href="https://www.linkedin.com/in/nuwan-goonewardena-6146a549" target="blank">
+                  <LinkeinLogo />
+                </a>
               </li>
               <li>
-                <Link>
+                <a href="https://www.behance.net/nuwan_gec8b" target="blank">
                   <BehanceLogo />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link>
+                <a href="https://github.com/nugoo1" target="blank">
                   <GithubLogo />
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>

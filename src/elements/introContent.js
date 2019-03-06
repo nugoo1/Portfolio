@@ -5,18 +5,9 @@ import introContentStyles from "./introContentStyles.module.scss"
 import Modal from "./modal"
 
 export default class introContent extends React.Component {
-  state = {
-    modalOpen: false,
-  }
-  handleModalOpen = () => {
-    this.setState({
-      modalOpen: true
-    })
-  }
   render() {
     return (
       <Grid container className={introContentStyles.container}>
-        {/* <Modal isOpen={this.state.modalOpen} /> */}
         <Grid
           item
           xs={12}
@@ -36,13 +27,12 @@ export default class introContent extends React.Component {
             style={{ maxHeight: "200px", margin: "20px" }}
           />
           <p>Powered by ReactJs, GatsbyJs & Netlify</p>
-          <a
-            onClick={() => {
-              this.handleModalOpen()
-            }}
-          >
-            Learn More
-          </a>
+          <Modal
+            title="React"
+            desc="A JavaScript library for building user interfaces. React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes."
+            image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+            link="https://reactjs.org/"
+          />
         </Grid>
         <Grid
           item
@@ -63,13 +53,12 @@ export default class introContent extends React.Component {
             style={{ maxHeight: "200px", margin: "20px" }}
           />
           <p>Powered by React Native</p>
-          <a
-            onClick={() => {
-              this.handleModalOpen()
-            }}
-          >
-            Learn More
-          </a>
+          <Modal
+            title="React Native"
+            desc="React Native allows developers to create native mobile apps using JavaScript and React. The principle of 'Learn Once, Write Anywhere' applies here, letting you build one single application for both Android and iOS."
+            image="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png"
+            link="https://facebook.github.io/react-native/"
+          />
         </Grid>
         <Grid
           item
@@ -89,13 +78,12 @@ export default class introContent extends React.Component {
             style={{ maxHeight: "200px", margin: "20px" }}
           />
           <p>Powered by NodeJs & GraphQL</p>
-          <a
-            onClick={() => {
-              this.handleModalOpen()
-            }}
-          >
-            Learn More
-          </a>
+          <Modal
+            title="Node.js"
+            desc="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. It is used in Google Chrome and in Node.js, among others."
+            image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2000px-Node.js_logo.svg.png"
+            link="https://nodejs.org/en/"
+          />
         </Grid>
       </Grid>
     )

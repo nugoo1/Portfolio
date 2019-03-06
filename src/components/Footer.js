@@ -2,9 +2,7 @@ import React from "react"
 import {
   FaEnvelope,
   FaFacebook,
-  FaLinkedin,
-  FaAddressCard,
-  FaFeatherAlt,
+  FaLinkedin
 } from "react-icons/fa"
 
 import footerStyles from "./footer.module.scss"
