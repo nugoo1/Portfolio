@@ -20,13 +20,10 @@ export default function Footer() {
       <div className={footerStyles.footerContainer}>
         <h2>Connect Directly</h2>
         <div className={footerStyles.socialIcons}>
-          <a>
+          <a href="mailto:nuwan_g@live.com">
             <FaEnvelope />
           </a>
-          <a>
-            <FaFacebook />
-          </a>
-          <a>
+          <a href="https://www.linkedin.com/in/nuwan-goonewardena-6146a549/">
             <FaLinkedin />
           </a>
         </div>
