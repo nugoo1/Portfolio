@@ -5,6 +5,7 @@ import {
   FaLinkedin
 } from "react-icons/fa"
 
+import Contact from "./Contact";
 import footerStyles from "./footer.module.scss"
 
 export default function Footer() {
@@ -14,6 +15,7 @@ export default function Footer() {
         <div className={footerStyles.titleContainer}>
           <h1 className={footerStyles.title}>Reach Out</h1>
         </div>
+        <Contact />
       </div>
       <div className={footerStyles.footerContainer}>
         <h2>Connect Directly</h2>
